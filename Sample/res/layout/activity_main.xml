@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edit_groupname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="组名/家庭名  :" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_personname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="人名  :" >
+        </EditText>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_chooseimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_getsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询缓存数据" />
+            <Button
+                android:id="@+id/btn_create_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="创建新组" />
+
+            <Button
+                android:id="@+id/btn_detect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人脸检测" />
+
+            <Button
+                android:id="@+id/btn_createPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="创建一个人" />
+
+            <Button
+                android:id="@+id/btn_addperson2group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加组成员" />
+
+            <Button
+                android:id="@+id/btn_tain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="训练组" />
+
+            <Button
+                android:id="@+id/btn_queryResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询训练结果" />
+
+            <Button
+                android:id="@+id/btn_identify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人脸识别" />
+
+            <Button
+                android:id="@+id/btn_addface2person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加脸给人" />
+            <Button
+                android:id="@+id/btn_findAllgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询所有的组" />
+            <Button
+                android:id="@+id/btn_findpersonByGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询某组的人" />
+            <Button
+                android:id="@+id/btn_findallperson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询所有的人" />
+            <Button
+                android:id="@+id/btn_deletegroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除组" />
+            <Button
+                android:id="@+id/btn_deleteperson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除人" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
