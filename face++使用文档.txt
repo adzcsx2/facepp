@@ -10,3 +10,5 @@
 
 使用说明:
 该封装为个人封装，详细API请查看face++官网:http://www.faceplusplus.com.cn/trainidentify/ 使用说明:需要在androidmainfest配置Application,在该Application的OnCreate()方法中配置 Configure.updateProperties(Configure.API_KEY, "Your api_key"); Configure.updateProperties(Configure.API_SECRET, "Your api_secret"); 在使用缓存查询数据时，groupname前面需要加FaceppRecognize.GROUP personname前面需要加FaceppRecognize.PERSON 例:createGroup(FaceppRecognize.GROUP+"groupname",new Callback());
+
+FaceppRecognize类使用详见doc文件夹
